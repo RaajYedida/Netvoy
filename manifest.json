@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "NetVoy",
+    "version": "0.0.1",
+    "description": "Chrome Extension that allows you to track your website usage and impose limits",
+    "permissions": [
+      "tabs",
+      "storage"
+    ],
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "commands": {
+        "log-times": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+L",
+                "mac": "Command+Shift+L"
+            },
+            "description": "Log all visit times"
+        }
+    }    
+  }
+  
